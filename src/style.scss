@@ -1,0 +1,55 @@
+@import 'node_modules/vanilla-framework/scss/_vanilla.scss';
+@include vanilla;
+:root {
+	--primary-colour: #a87ca0;
+}
+
+html {
+	font-size: 62.5%;
+	/* font-size 1em = 10px on default browser settings */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.6rem;
+	background: #ffffff;
+}
+
+.row {
+	margin-top: 2rem;
+	max-width: 100.875rem;
+}
+
+.card-border--top {
+	border-top: 0.3rem solid var(--primary-colour);
+}
+
+.post-info--heading {
+	h3 {
+		text-transform: uppercase;
+	}
+}
+
+.post-info {
+	h1 {
+		height: 3rem;
+		a {
+			color: $color-link;
+		}
+	}
+	p {
+		line-height: 2rem;
+		height: 2rem;
+	}
+}
+
+.p-card--footer {
+	p {
+		padding-top: 2rem;
+	}
+}
