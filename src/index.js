@@ -1,7 +1,7 @@
 import axios from 'axios';
 const format = require('date-fns/format');
 
-const getAPI = async () => {
+export const getAPI = async () => {
 	try {
 		const response = await axios.get(
 			'http://insights.canonicalwebteam.com/wp-json/wp/v2/posts?per_page=3&page=1&_embed=True'
